@@ -1,6 +1,6 @@
 ### Hello!
-- 🔭 I’m currently working on Misc Discord Bots! (Using templates until I learn)
-- 🌱 I’m currently learning .py/js/html/css.
+- 🔭 I’m currently working on random things.
+- 🌱 I’m currently improving .py/js/html/css.
 - 👯 I’m looking to collaborate on Nothing! Check back later!
 - 🤔 I’m looking for help with Discord Bots!
 - 📫 How to reach me: Arch1010#4338 on Discord OR create an issue in this repository.
