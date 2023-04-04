@@ -30,7 +30,11 @@
     <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/cookies.js"></script>
     <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/fetchCalsses.js"></script>
     <script type="text/javascript">
+      try{
       fetchClasses('json-about',10);
+      } catch(err) {
+        console.warn('https://.../fetchClasses.js didn\'t load!')
+      }
     </script>
   </body>
 </html>
