@@ -41,6 +41,12 @@
       } catch (err) {
         console.info(err);
       }
+      if("default" == Notification.permission) {
+        Notification.requestPermission().then(function (permission) {
+          console.log(permission);
+        });
+        console.log(Notification.permission);
+      }
     </script>
   </body>
 </html>
