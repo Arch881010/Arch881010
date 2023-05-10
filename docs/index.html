@@ -35,5 +35,12 @@
         console.warn('https://.../fetchClasses.js didn\'t load!');
       }
     </script>
+    <script type="text/javascript">
+      try {
+        console.log(Notification.permission);
+      } catch (err) {
+        console.info(err);
+      }
+    </script>
   </body>
 </html>
