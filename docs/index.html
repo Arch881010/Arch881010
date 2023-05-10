@@ -28,7 +28,6 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/cookies.js"></script>
     <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/fetchClasses.js"></script>
-    <button id="notifs">Enable Notifications</button>
     <script type="text/javascript">
       try{
       fetchClasses('json-about','10th');
@@ -49,19 +48,19 @@ function showNotification() {
    if(document.visibilityState === "visible") {
       return;
    }
-   var title = "JavaScript Jeep";
+   var title = "TestTitle";
    //icon = "image-url"
    var body = "Message to be displayed";
    var notification = new Notification('Title', { body });
    notification.onclick = () => { 
-          notification.close();
-          window.parent.focus();
+      notification.close();
+      window.parent.focus();
    }
 }
 function requestAndShowPermission() {
    Notification.requestPermission(function (permission) {
       if (permission === "granted") {
-            showNotification();
+        showNotification();
       }
    });
 }
