@@ -28,6 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/cookies.js"></script>
     <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/fetchClasses.js"></script>
+    <button id="notifs">Enable Notifications</button>
     <script type="text/javascript">
       try{
       fetchClasses('json-about','10th');
@@ -36,17 +37,19 @@
       }
     </script>
     <script type="text/javascript">
+      document.getElementById('notifs').onclick = function() {
       try {
         console.log(Notification.permission);
       } catch (err) {
         console.info(err);
       }
-      if("default" !== Notification.permission) {
+      if("xd" !== Notification.permission) {
         Notification.requestPermission().then(function (permission) {
           console.log(permission);
         });
         console.log(Notification.permission);
       }
+    }
     </script>
   </body>
 </html>
