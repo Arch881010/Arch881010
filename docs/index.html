@@ -48,10 +48,10 @@ function showNotification() {
    if(document.visibilityState === "visible") {
       return;
    }
-   var title = "TestTitle";
-   icon = "https://weather.im/live/images/nws.png"
-   var body = "Message to be displayed";
-   var notification = new Notification('Title', { body, icon });
+   var title = "New Notif";
+   var icon = "https://weather.im/live/images/nws.png"
+   var body = "Message to be displayed eg: 'One new tornado warning for x'";
+   var notification = new Notification(title, { body, icon });
    notification.onclick = () => { 
       notification.close();
       window.parent.focus();
