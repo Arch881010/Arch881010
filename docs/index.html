@@ -11,59 +11,21 @@
   </head>
   <body>
     <h1>About me!</h1>
-    <b1>Hi! I am Arch who is currently working on a personal mail fetcher for testmail (@inbox.testmail.app). It may get released, feel free to add me on Discord and ask about it or me if you want (Arch1010#4338).</b1><br>
+    <b1>Hi! I am Arch who is currently working on a lot of things,</b1><br>
     <b1>There is plenty of other stuff about me, but I won't reveal irl things until I feel comfortable and 18+.</b1><br>
-    <h3>Cookie Learning</h3>
-    <b1>I have finally learned how to use same-site cookies. Etc, you have visited this website: <b1 id="visits"></b1> times.<br>
-    <b1>This is a great accomplishment to me, as I have wondered before, and finally decided to do so.</b1><br>
-    <h3>Api Usage</h3>
-    <b1>I have finally figured out accessing an API somewhat easily, just not how to create it.</b1><br>
-    <h3>Discord Bots</h3>
-    <b1>Honestly, I am doing pretty well recalling what to do from memory, what sucks is that I don't know how to fetch a role.</b1><br>
-    <b1>discord.js's files are still old and uses message.xyz in some spots instead of interaction.xyz .</b1><br>
     <h3>More About Myself</h3>
-    <b1>Well. You already know me somewhat, but I have plans on becoming a software Enginner.<br> Though, I also wish to become Non-Binary!<br>
-    I am currently in HS, taking a college block schedule.</b1>
+    <b1>Well. You already know me somewhat, but I have plans on becoming a software Enginner.<br> Well! I think I'm nonbinary but my pronouns don't confirm anything anymore. So yk<br>
+    I am currently in HS.</b1>
     <div id="json-about"></div>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/cookies.js"></script>
     <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/fetchClasses.js"></script>
     <script type="text/javascript">
       try{
-      fetchClasses('json-about','10th');
+        fetchClasses('json-about','10th');
       } catch(err) {
         console.warn('https://.../fetchClasses.js didn\'t load!');
       }
-    </script>
-    <script type="text/javascript">
-    let permission = Notification.permission;
-if(permission === "granted") {
-   showNotification();
-} else if(permission === "default"){
-   requestAndShowPermission();
-} else {
-  console.warn('You don\' have permissions enabled or set to asked! Missing PERMS')
-}
-function showNotification() {
-   if(document.visibilityState === "visible") {
-      return;
-   }
-   var title = "New Notif";
-   var icon = "https://weather.im/live/images/nws.png"
-   var body = "Message to be displayed eg: 'One new tornado warning for x'";
-   var notification = new Notification(title, { body, icon });
-   notification.onclick = () => { 
-      notification.close();
-      window.parent.focus();
-   }
-}
-function requestAndShowPermission() {
-   Notification.requestPermission(function (permission) {
-      if (permission === "granted") {
-        showNotification();
-      }
-   });
-}
     </script>
   </body>
 </html>
