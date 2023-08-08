@@ -11,14 +11,44 @@
   </head>
   <body>
     <h1>About me!</h1>
-    <b1>Hi! I am Arch who is currently working on a lot of things,</b1><br>
+    <b1>Hi! I am Arch who is currently working on a lot of things.</b1><br>
     <b1>There is plenty of other stuff about me, but I won't reveal irl things until I feel comfortable and 18+.</b1><br>
     <h3>More About Myself</h3>
     <b1>Well. You already know me somewhat, but I have plans on becoming a software Enginner.<br> Well! I think I'm nonbinary but my pronouns don't confirm anything anymore. So yk<br>
-    I am currently in HS.</b1>
+    I am currently in HS.</b1><br>
+    <div id="more"></div><br>
+    <script type="text/javascript">
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      var list = ["status", "playing", "vscode"];
+      var items = [];
+      for (var item of list) {
+        var element = document.createElement('img');
+          element.setAttribute("alt", item);
+          element.setAttribute('src', `https://api.statusbadges.me/badge/${item}/410248634593050627`);
+          element.setAttribute('id', item);
+          items.push(element);
+      }
+      function setItems() {
+        document.getElementById('more').replaceChildren();
+        for (var item of items) document.getElementById('more').appendChild(item);
+        document.getElementById('more').innerHTML = document.getElementById('more').innerHTML + `<a href="https://api.statusbadges.me/openspotify/410248634593050627" target="_blank" rel="noopener"><img src="https://api.statusbadges.me/badge/spotify/410248634593050627" alt="spotify"></a>`;
+      }
+      function refreshItems() {
+        for (var item of list) {
+          var itemDOM = document.getElementById(item);
+          itemDOM.setAttribute('src', `https://api.statusbadges.me/badge/${item}/410248634593050627`);
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      setItems();
+      setInterval(refreshItems, 1000);
+    </script>
     <div id="json-about"></div>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/cookies.js"></script>
+    <!--<script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/cookies.js"></script>-->
     <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/fetchClasses.js"></script>
     <script type="text/javascript">
       try{
