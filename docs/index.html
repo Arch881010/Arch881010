@@ -33,13 +33,15 @@
       function setItems() {
         document.getElementById('more').replaceChildren();
         for (var item of items) document.getElementById('more').appendChild(item);
-        document.getElementById('more').innerHTML = document.getElementById('more').innerHTML + `<a href="https://api.statusbadges.me/openspotify/410248634593050627" target="_blank" rel="noopener"><img src="https://api.statusbadges.me/badge/spotify/410248634593050627" alt="spotify"></a>`;
+        document.getElementById('more').innerHTML = document.getElementById('more').innerHTML + `<a href="https://api.statusbadges.me/openspotify/410248634593050627" target="_blank" rel="noopener" id="spot1"><img src="https://api.statusbadges.me/badge/spotify/410248634593050627" alt="spotify" id="spot2"></a>`;
       }
       function refreshItems() {
         for (var item of list) {
           var itemDOM = document.getElementById(item);
           itemDOM.setAttribute('src', `https://api.statusbadges.me/badge/${item}/410248634593050627`);
         }
+        document.getElementById('spot1').setAttribute('src', "https://api.statusbadges.me/openspotify/410248634593050627");
+        document.getElementById('spot2').setAttribute('src', "https://api.statusbadges.me/openspotify/410248634593050627");
       }
     </script>
     <script type="text/javascript">
