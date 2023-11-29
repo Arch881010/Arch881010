@@ -6,7 +6,7 @@
 <!-- - 🤔 I’m looking for help with Discord Bots!
 Especially the comparison of roles (via intearctions)! -->
 - 📫 How to reach me: @arch1010 on Discord OR create an issue in this repository.
-- 😄 Pronouns: He/They/She
+- 😄 Pronouns: She/They/He
 
 [![wakatime](https://wakatime.com/badge/user/5f146e18-0653-42a5-a1aa-6fba1a876d4c.svg)](https://wakatime.com/@5f146e18-0653-42a5-a1aa-6fba1a876d4c)
 
