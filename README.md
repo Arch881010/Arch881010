@@ -2,11 +2,8 @@
 
 - 🔭 I’m currently working on some random things.
 - 🌱 I’m currently improving on .py/js/html/css.
-<!-- - 👯 I’m looking to collaborate on Nothing! Check back later! -->
-<!-- - 🤔 I’m looking for help with Discord Bots!
-Especially the comparison of roles (via intearctions)! -->
-- 📫 How to reach me: @arch1010 on Discord OR create an issue in this repository.
-- 😄 Pronouns: She/They/He
+- 📫 How to reach me: @arch1010 on Discord OR create an issue in this repository. You can also email me (arch1010 at pm dot me.)
+- 😄 Pronouns: She/They
 
 [![Discord Presence](https://lanyard.cnrad.dev/api/410248634593050627?theme=dark&animatedDecoration=true&hideClan=true&hideBadges=true&showDisplayName=true)](https://discord.com/users/410248634593050627)
 
