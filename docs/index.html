@@ -1,68 +1,138 @@
-<!DOCTYPE html>
-<!-- Updated Logs: 1.0-->
-  <head>
-    <title>Arch's Personal Website</title>
-    <style>
-      body {
-        color: white;
-        background-color: black;
-        font-family: monospace; 
-      }
-    </style>
-    <!--1.0 - add my personal data.-->
-    <link rel="stylesheet" type="text/css" href="https://api.arch881010.repl.co/cdn/homeF.css">
-    <link rel="shortcut icon" type="ico" href="https://api.arch881010.repl.co/api/static/icon.ico">
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Arch's Personal Website</title>
+		<style>
+			body {
+				color: white;
+				background-color: black;
+				font-family: monospace;
+			}
+			a {
+				color: rgb(255, 206, 206);
+			}
+		</style>
+	</head>
+	<body>
+		<h1>About me!</h1>
+		<div class="body" id="aboutmetext">
+			<b1
+				>H1! I am Arch who is currently working on a mix of things and is about
+				to go to college, once I graduate in May.</b1
+			>
+			<b1
+				>I have had a decent Senior year and still can't believe I am graduating
+				soon.</b1
+			>
+			<b1
+				>I also can't believe I am 18 now, as the last time I updated this site
+				was 3 years ago (2023), and now it's 2026.</b1
+			>
+			<h3>College Plans</h3>
+			<b1
+				>I plan on achiving a Bachelors in Software Development and prehaps a
+				certificate in Cybersecurity.</b1
+			>
+			<b1
+				>Then I plan on going into the workforce and later taking classes for
+				Meteorology.</b1
+			>
+			<b1
+				>I believe I've taken like 50+ college hours via concurrent classes, so
+				my expected grad date for college is '29</b1
+			>
+			<h3>Other Stuff</h3>
+			<b1
+				>I would greatly appreciate if you support me/send me money. I host a
+				few websites and weather related placefiles and servers aren't free.</b1
+			>
+			<div id="supporturls" class="supporturls">
+				<a href="https://patreon.com/Arch881010">Patreon Link</a>
+			</div>
+			<h3>Projects</h3>
+			<b1
+				>I have created many projects, but here are a few that I like the most.
+				(And your support will help me continue to run them!)</b1
+			>
+			<div id="urls" class="urls">
+				<a href="https://weather.arch1010.dev">https://weather.arch1010.dev</a>
+				<b1>A Weather app in the browser that I continue to work on.</b1> <br />
+				<a href="https://placefiles.arch1010.dev"
+					>https://placefiles.arch1010.dev</a
+				>
+				<b1>Placefiles for GRLevelX compatiable apps (like mine!)</b1> <br />
+				<a href="https://forecast.arch1010.dev"
+					>https://forecast.arch1010.dev</a
+				>
+				<b1>A forecast for Hot Springs, AR using python.</b1> <br />
+				<a href="https://math.arch1010.dev">https://math.arch1010.dev</a>
+				<b1
+					>A very old project of mine that I might pick up again. Is primarily
+					for geometry as of 4/29/26</b1
+				>
+				<br />
+			</div>
+			<a href="https://github.com/Arch881010">https://github.com/Arch881010</a>
+			<b1>My github account, sorry for the mess/random attempts on stuff!</b1
+			><br />
+		</div>
 
-  </head>
-  <body>
-    <h1>About me!</h1>
-    <b1>Hi! I am Arch who is currently working on a lot of things.</b1><br>
-    <b1>There is plenty of other stuff about me, but I won't reveal irl things until I feel comfortable and 18+.</b1><br>
-    <h3>More About Myself</h3>
-    <b1>Well. You already know me somewhat, but I have plans on becoming a software Enginner.<br> Well! I think I'm nonbinary but my pronouns don't confirm anything anymore. So yk<br>
-    I am currently in HS.</b1><br>
-    <div id="more"></div><br>
-    <script type="text/javascript">
-      function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-      }
-      var list = ["status", "playing", "vscode"];
-      var items = [];
-      for (var item of list) {
-        var element = document.createElement('img');
-          element.setAttribute("alt", item);
-          element.setAttribute('src', `https://api.statusbadges.me/badge/${item}/410248634593050627`);
-          element.setAttribute('id', item);
-          items.push(element);
-      }
-      function setItems() {
-        document.getElementById('more').replaceChildren();
-        for (var item of items) document.getElementById('more').appendChild(item);
-        document.getElementById('more').innerHTML = document.getElementById('more').innerHTML + `<a href="https://api.statusbadges.me/openspotify/410248634593050627" target="_blank" rel="noopener" id="spot1"><img src="https://api.statusbadges.me/badge/spotify/410248634593050627" alt="spotify" id="spot2"></a>`;
-      }
-      function refreshItems() {
-        for (var item of list) {
-          var itemDOM = document.getElementById(item);
-          itemDOM.setAttribute('src', `https://api.statusbadges.me/badge/${item}/410248634593050627`);
-        }
-        document.getElementById('spot1').setAttribute('href', "https://api.statusbadges.me/openspotify/410248634593050627");
-        document.getElementById('spot2').setAttribute('src', "https://api.statusbadges.me/badge/spotify/410248634593050627");
-      }
-    </script>
-    <script type="text/javascript">
-      setItems();
-      setInterval(refreshItems, 1000);
-    </script>
-    <div id="json-about"></div>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-    <!--<script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/cookies.js"></script>-->
-    <script type="text/javascript" src="https://arch881010.github.io/scripts/personalwebsite/fetchClasses.js"></script>
-    <script type="text/javascript">
-      try{
-        fetchClasses('json-about','10th');
-      } catch(err) {
-        console.warn('https://.../fetchClasses.js didn\'t load!');
-      }
-    </script>
-  </body>
+		<br />
+
+		<h2>What am I up to?</h2>
+
+		<div id="more"></div>
+		<br />
+		<script type="text/javascript">
+			function sleep(ms) {
+				return new Promise((resolve) => setTimeout(resolve, ms));
+			}
+			var list = ["status", "playing", "vscode"];
+			var items = [];
+			for (var item of list) {
+				var element = document.createElement("img");
+				element.setAttribute("alt", item);
+				element.setAttribute(
+					"src",
+					`https://api.statusbadges.me/badge/${item}/410248634593050627`,
+				);
+				element.setAttribute("id", item);
+				items.push(element);
+			}
+			function setItems() {
+				document.getElementById("more").replaceChildren();
+				for (var item of items)
+					document.getElementById("more").appendChild(item);
+				document.getElementById("more").innerHTML =
+					document.getElementById("more").innerHTML +
+					`<a href="https://api.statusbadges.me/openspotify/410248634593050627" target="_blank" rel="noopener" id="spot1"><img src="https://api.statusbadges.me/badge/spotify/410248634593050627" alt="spotify" id="spot2"></a>`;
+			}
+			function refreshItems() {
+				for (var item of list) {
+					var itemDOM = document.getElementById(item);
+					itemDOM.setAttribute(
+						"src",
+						`https://api.statusbadges.me/badge/${item}/410248634593050627`,
+					);
+				}
+				document
+					.getElementById("spot1")
+					.setAttribute(
+						"href",
+						"https://api.statusbadges.me/openspotify/410248634593050627",
+					);
+				document
+					.getElementById("spot2")
+					.setAttribute(
+						"src",
+						"https://api.statusbadges.me/badge/spotify/410248634593050627",
+					);
+			}
+		</script>
+		<script type="text/javascript">
+			setItems();
+			setInterval(refreshItems, 1000);
+		</script>
+		<div id="json-about"></div>
+	</body>
 </html>
