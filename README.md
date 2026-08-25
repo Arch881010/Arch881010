@@ -1,7 +1,4 @@
 # Hello
-
-- 🔭 I’m currently working on some random things.
-- 🌱 I’m currently improving on .py/js/html/css.
 - 📫 How to reach me: @arch1010 on Discord OR create an issue in this repository. You can also email me (arch1010 at pm dot me.)
 - 😄 Pronouns: She/They
 
